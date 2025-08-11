@@ -1,0 +1,18 @@
+{
+  "name": "kinapi-vercel",
+  "version": "1.0.0",
+  "description": "KinAPI backend serverless functions for Vercel",
+  "main": "api/ban-ip.js", // Hoặc bất kỳ file API nào làm main
+  "scripts": {
+    "start": "vercel dev" // Dùng để chạy local nếu mày cài Vercel CLI
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1", // Chỉ dùng cho dev local, Vercel tự quản lý env
+    "@octokit/rest": "^20.0.2",
+    "express-rate-limit": "^7.1.5" // Sẽ không dùng trực tiếp trong serverless function nữa, nhưng vẫn có thể dùng logic
+  }
+}
